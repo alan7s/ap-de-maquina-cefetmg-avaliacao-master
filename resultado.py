@@ -185,7 +185,7 @@ class Fold():
 
                 #4. Crie o treino por meio dos dados originais (df_dados_rand),
                 #removendo os dados que serão avaliados  (df_to_predict)
-                df_treino = df_dados.drop(df_to_predict.index)
+                df_treino = df_dados_rand.drop(df_to_predict.index)
                 print(df_treino)
                 
                 #5. Crie o fold (objeto da classe Fold) para adicioná-lo no vetor
